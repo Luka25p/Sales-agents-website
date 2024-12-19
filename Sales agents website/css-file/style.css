@@ -1,0 +1,178 @@
+.conteiner {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(224, 131, 0);
+  background: linear-gradient(180deg, rgba(224, 131, 0, 0) 60%, rgb(0, 0, 0) 99%);
+}
+.conteiner .bacground-img {
+  background-image: url(/photos/bac3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -3;
+}
+.conteiner .bacground-img:nth-child(2) {
+  background-image: url(/photos/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  opacity: 0.5;
+  mix-blend-mode: lighten;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.conteiner .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+.conteiner header {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.conteiner header ul {
+  display: flex;
+  padding-top: 80px;
+  gap: 40px;
+}
+.conteiner header ul li:nth-child(1) {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+.conteiner header ul li:nth-child(1) a {
+  border: none;
+  padding: 0;
+}
+.conteiner header ul a {
+  color: rgb(255, 247, 247);
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid transparent;
+  padding-bottom: 8px;
+  transition: 0.4s linear;
+}
+.conteiner header ul a:hover {
+  border-bottom: 2px solid rgb(255, 247, 247);
+}
+.conteiner header h1 {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 80px;
+}
+.conteiner main {
+  width: 85%;
+  color: rgb(255, 250, 250);
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  justify-content: center;
+  gap: 40px;
+}
+.conteiner main h2 {
+  width: 500px;
+  padding-top: 80px;
+}
+.conteiner main p {
+  width: 600px;
+}
+.conteiner main a {
+  font-size: 28px;
+  color: rgb(41, 41, 41);
+  background-color: rgb(255, 248, 248);
+  padding: 10px;
+  border-radius: 40px;
+  font-weight: 600;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  margin-top: 40px;
+}
+.conteiner main a:hover {
+  color: rgb(255, 252, 252);
+  background-color: rgb(37, 37, 37);
+}
+.conteiner footer {
+  width: 85%;
+  display: flex;
+  color: white;
+  align-items: end;
+  flex-direction: column;
+  font-size: 28px;
+  padding: 40px;
+  gap: 20px;
+}
+.conteiner footer a {
+  color: rgb(37, 37, 37);
+}
+.conteiner footer ul {
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+}
+.conteiner footer ul li {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.conteiner footer ul li a {
+  color: rgb(43, 43, 43);
+  font-size: 18px;
+}
+.conteiner footer ul li:hover {
+  scale: 1.1;
+}
+.conteiner footer section a {
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+}
+
+@media (max-width: 945px) {
+  header {
+    font-size: 18px;
+  }
+  header ul li {
+    display: none;
+  }
+  main h2 {
+    font-size: 24px;
+  }
+  main p {
+    font-size: 18px;
+    width: 120px;
+  }
+  main a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
